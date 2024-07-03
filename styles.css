@@ -1,11 +1,10 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 .numero1 {
-    color: rgb(0, 139, 58);
-
+  background-color: aquamarine;
+  color: red;
 }

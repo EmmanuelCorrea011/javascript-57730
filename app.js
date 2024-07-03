@@ -1,41 +1,39 @@
-//comentar facilito doble "//" o */ y /*
+let nombre = prompt("Bienvenido! Ingrese su nombre");
+let edad = prompt("por favor, ingrese su edad");
 
-// let nombreXXX = "juan carlos" ;
-// // otra forma de crear variables es con "const" ejemplo :   const apellidoXXX = "carlitero"
+if (edad <= 18) {
+  alert("usted no puede ingresar " + nombre + " es menor de edad");
+} else {
+  let monto = Number(prompt("ingrese el monto a calcular"));
+  alert("Tenemos 15% de recargo hasta 3 cuotas y 30% hasta el limite de 6");
+  let cuotas = Number(prompt("ingrese cantidad de cuotas"));
 
-// // alert("prueba de alerta falopa mostrame el nombre")
-// // alert(nombreXXX)
+  switch (cuotas) {
+    case 1:
+    case 2:
+    case 3:
+      let recargo1 = monto + monto * 0.15;
+      let cantidadCuotas1 = recargo1 / cuotas;
+      alert(
+        `Tiene un 15% re recargo, total: ${recargo1}. Le quedaria un total de ${cuotas} de ${cantidadCuotas1}`
+      );
+      break;
 
-// console.log(nombreXXX);
-//monstrar nombre en consola//
+    case 4:
+    case 5:
+    case 6:
+      let recargo2 = monto + monto * 0.3;
+      let cantidadCuotas2 = recargo2 / cuotas;
+      alert(
+        `Tiene un 30% re recargo, total: ${recargo2}. Le quedaria un total de ${cuotas} de ${cantidadCuotas2}`
+      );
+      break;
 
-// const documento = 4567897;
+    default:
+      alert("numero no valido");
+  }
+}
 
-// let numero = prompt("escribir un mnumero"); // almacenar un variable
-// console.log(numero);
-// -----------------------------------------------------------
+alert(`Muchas gracias ${nombre}!`);
 
-// // let nombre = prompt ("ingresa tu nombre") ;
-// // console.log("HOLA "+ nombre +" COMO ESTAS?");
-// // alert("HOLA "+ nombre +" COMO ESTAS?");
-
-// -------------------------------------------------------------
-
-// como se usa el + con numeros y strings//
-// let n1 = 2
-// let n2 = 5
-
-// let total = n1 + n2;
-// console.log(total)
-
-let n3 = Number(prompt("ingresa un numero"));
-
-let n4 = Number(prompt("ingresa un segundo numero"));
-
-sdfsdf;
-
-console.log(n3 > n4); //booleano true or false//
-
-let total2 = n3 + n4; //suma de
-
-console.log(total2);
+// no hay mucho que comentar, esta bastante simple xD //
